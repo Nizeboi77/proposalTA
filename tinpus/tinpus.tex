@@ -1,0 +1,46 @@
+
+\section{TINJAUAN PUSTAKA}
+
+% Ubah bagian-bagian berikut dengan isi dari pendahuluan
+
+\subsection{ESP32}
+\label{sec:esp32}
+% Ubah bagian-bagian berikut dengan isi dari tinjauan pustaka
+
+ESP32 merupakan mikrokontroller dengan Wi-Fi dan Bluetooth®. Adapun detail spesifikasi nya adalah sebagai berikut [15] :
+\begin{itemize}
+	\item Menurut sistem dan memorinya, ESP32 merupakan sistem dual-core (PRO-CPU untuk protocol dan APP-CPU untuk aplikasi) dengan dua CPU Harvard Architecture Xtensa LX6. Kemudian untuk memori tertanamnya, baik memori eksternal maupun peripheral lainnya terletak pada data bus dan/atau pada instruction bus dari CPU tersebut. Space address untuk data dan instruction bus adalah 4GB lalu untuk peripheral space address sebesar 512KB. Kemudian memori tertanamnya sebesar 448KB ROM, 520KB SRAM, dan dua 8KB memori RTC.
+	\item Menurut Clock dan Timer nya, ESP32 dapat menggunakan baik Phase Lock Loop (PLL) internal 320MHz maupun kristal eksternal. ESP32 juga memungkinkan untuk penggunaan oscillating circuit sebagai clock source pada 2-40MHz yang menghasilkan master clock CPU-CLK untuk kedua core CPU. Clock ini dapat setinggi 160MHz untuk High Performance atau direndahkan guna mengurangi pemakaian daya (power consumption).
+	\item Secara pemrograman, sistem operasi real-time dari ESP32 adalah FreeRTOS, yang mana merupakan sistem operasi open-source. Kemudian Bahasa pemrograman yang umum digunakan pada ESP32 adalah Bahasa C, namun mikrokontroller ini dapat dengan mudah deprogram dengan menggunakan Bahasa C++.
+\end{itemize}
+
+\subsection{WiFi}
+\label{sec:wifi}
+
+Hotspot (Wi-Fi) adalah satu standar Wireless Netwoking tanpa kabel, hanya dengan komponen yang sesuai dapat terkoneksi ke jaringan\cite{trikun}. Wireless Fidelity (Wi-Fi) merupakan sebuah media penghantar komunikasi data tanpa kabel yang bisa digunakan untuk komunikasi atau mentransfer program dan data dengan kemampuan yang sangat cepat. Wi-Fi juga dapat diartikan teknologi yang memanfaatkan peralatan elektronik untuk bertukar data dengan menggunakan gelombang radio (nirkabel) melalui sebuah jaringan komputer, termasuk koneksi internet berkecepatan tinggi. Istilah Wi-Fi banyak dikenal oleh masyarakat sebagai media untuk internet saja, namun sebenarnya bisa juga difungsikan sebagai jaringan tanpa kabel (nirkabel) seperti di perusahaan-perusahaan besar dan juga di warnet. Jaringan nirkabel tersebut biasa diistilahkan dengan LAN (local area network). Sehingga antara komputer dilokasi satu bisa saling berhubungan dengan komputer lain yang letaknya berbeda. Sedangkan untuk penggunaan internet, Wi-Fi memerlukan sebuah titik akses yang biasa disebut dengan hotspot untuk menghubungkan dan mengontrol antara pengguna Wi-Fi dengan jaringan internet pusat. Sebuah hotspot pada umumnya dilengkapi dengan password yang bisa meminimalisasi siapa saja yang bisa menggunakan fasilitas tersebut. Fitur ini sering digunakan oleh pengguna rumahan, restoran, swalayan, café dan hotel.
+
+\subsection{Node.js}
+\label{sec:nodejs}
+
+Merupakan perangkat lunak yang digunakan dalam pengembangan aplikasi berbasis web dengan penulisan dalam sintaks bahasa pemrograman JavaScript. NodeJs dikembangkan untuk menyempurnakan kinerja javascript dalam pemrogaman server seperti PHP, Ruby, Perl, dan sebagainya. Salah satu keuntungan dari NodeJS adalah dapat digunakan di banyak operasi sistem seperti Windows, Mac OS, Linux. Untuk menjalankan server web, NodeJS tidak memerlukan program server web seperti Apache atau Nginx karena telah memiliki pustaka server HTTP tersendiri[18].
+
+\subsection{HTML}
+\label{sec:html}
+
+HTML (Hypertext Markup Language) merupakan sarana untuk memberi tahu web browser cara menampilkan halaman jejaring (webpage)[10]. HTML menentukan syntax serta penempatan direksi embedded khusus yang tidak ditampilkan oleh peramban (browser) tetapi memberikan saran mengenai cara menampilkan konten dari dokumen, termasuk teks, gambar, serta media pendukung yang lainnya. HTML juga membuat dokumen menjadi lebih interaktif melalui hypertext link special, yang mana menghubungkan dokumen terkait dengan dokumen lain di komputer serta sumber dari internet[11]. 
+
+\subsection{MQTT}
+\label{sec:mqtt}
+
+MQTT (Message Queuing Telemetry Transport) merupakan suatu protokol konektifitas  dari mesin ke mesin / machine to machine (M2M) yang memiliki kemampuan untuk mengirimkan data dengan sangat ringan menggunakan arsitektur TCP/IP [8]. Pada MQTT sendiri mempunyai keunggulan yaitu dapat mengirimkan data dengan bandwith yang ringan, konsumsi listrik yang sedikit, latensi serta konektifitas yang sangat tinggi, ketersediaan variable yang banyak serta jaminan pengiriman data yang dapat dinegosiasikan.
+
+\subsection{MongoDB}
+\label{sec:mongodb}
+
+Merupakan kategori database NoSQL yang sedang dikembangkan secara aktif oleh 10gen menjadi MongoDB I.inc. MongoDB sendiri open-source yang sumbernya tersedia di banyak platform seperti Github. Fitur yang dimiliki MongoDB yaitu JSON-friendly database yang berarti dokumen yang disimpan ataupun diterima dari MongoDB sebagai objek JavaScript. Fitur yang berikutnya adalah schemaless nature, yang intinya adalah tidak perlu mendefinisikan struktur dari data yang disimpan (schema). MongoDB juga memperkenalkan konsep sharding, yang mana memungkinkan untuk melakukan scaling database secara horizontal serta vertikal[9].
+
+\subsection{Suhu dan Temperatur pada Budidaya Udang Vaname}
+\label{sec:suhudantemperatur}
+
+Dalam budidaya udang vaname,, kualitas air merupakan salah satu faktor utama yang menentukan keberhasilan dari proses budidaya, terdapat banyak parameter yang digunakan dalam pengukuran kualitas air seperti Suhu, pH, Salinitas, DO, Kecerahan,
+Nitrit, Fosfat, Alkalinitas, Besi(Fe), H2S, dan Jumlah Patogen. Adapun parameter yang akan dimonitoring dalam sistem adalah Suhu dan pH. Dalam parameter suhu, nilai optimal pada budidaya tambak udang adalah 26-32°C, range tersebut akan berdampak pada metabolisme udang serta laju pencernaan yang mana akan mempengaruhi pertumbuhan udang. Apabila dibawah 26°C, metabolisme udang akan menurun sehingga pertumbuhan udang terhambat, sedangkan jika diatas 32°C, enzim akan rusak [16]. Sedangkan dalam parameter pH, kadar yang ideal dalam tambak adalah 7,5-8,5. Apabila pH terlalu asam (<7,5) akan menyebabkan tingginya resiko penyakit dan tingkat kematian udang serta menipisnya oksigen terlarut akibat terikat mineral[17].
